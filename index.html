@@ -33,28 +33,28 @@
 		function piratify(html)
 		{
 			html = html
-				.replaceAll(/Pilotage/g, 'Pirating')
-				.replaceAll(/Pilots/g, 'Pirates')
-				.replaceAll(/Pilot/g, 'Pirate')
-				.replaceAll(/Privacy/g, 'Piracy')
-				.replaceAll(/pilot/g, 'pirate')
-				.replaceAll(/Vessel/g, 'Boatsy')
-				.replaceAll(/vessel/g, 'boatsy')
-				.replaceAll(/cookies/g, 'doubloons')
-				.replaceAll(/colleagues/g, 'fellow wrongdoers')
-				.replaceAll(/Capt\./g, 'Sail\'r')
-				.replaceAll(/yesterday/g, 'yest\'rday')
-				.replaceAll(/\bis\b/g, 'be')
-				.replaceAll(/\bthe /g, 't\' ')
-				.replaceAll(/\bThe /g, 'T\' ')
-				//.replaceAll(/\bam\b/g, 'be')
-				//.replaceAll(/(\w)v(\w)/g, '$1\'$2')
-				.replaceAll(/ing\b/g, 'in\'')
-				.replaceAll(/(\w)ar(\w)/g, '$1arrr$2')
-				.replaceAll(/(\w)or(\w)/g, '$1orr$2')
-				.replaceAll(/\bcr(\w)/g, 'crr$1')
-				.replaceAll(/https:\/\/www.marrrine-pirates.com\//gi, 'https://www.marine-pilots.com/')
-				.replaceAll(/https:\/\/marrrine-pirates.com\//gi, 'https://marine-pilots.com/')
+				.replace(/Pilotage/g, 'Pirating')
+				.replace(/Pilots/g, 'Pirates')
+				.replace(/Pilot/g, 'Pirate')
+				.replace(/Privacy/g, 'Piracy')
+				.replace(/pilot/g, 'pirate')
+				.replace(/Vessel/g, 'Boatsy')
+				.replace(/vessel/g, 'boatsy')
+				.replace(/cookies/g, 'doubloons')
+				.replace(/colleagues/g, 'fellow wrongdoers')
+				.replace(/Capt\./g, 'Sail\'r')
+				.replace(/yesterday/g, 'yest\'rday')
+				.replace(/\bis\b/g, 'be')
+				.replace(/\bthe /g, 't\' ')
+				.replace(/\bThe /g, 'T\' ')
+				//.replace(/\bam\b/g, 'be')
+				//.replace(/(\w)v(\w)/g, '$1\'$2')
+				.replace(/ing\b/g, 'in\'')
+				.replace(/(\w)ar(\w)/g, '$1arrr$2')
+				.replace(/(\w)or(\w)/g, '$1orr$2')
+				.replace(/\bcr(\w)/g, 'crr$1')
+				.replace(/https:\/\/www.marrrine-pirates.com\//gi, 'https://www.marine-pilots.com/')
+				.replace(/https:\/\/marrrine-pirates.com\//gi, 'https://marine-pilots.com/')
 				;
 
 			//console.log(html);
@@ -67,10 +67,10 @@
 			//const resourcesDomain = "https://cors-anywhere.herokuapp.com/" + domain;
 
 			html = html
-				.replaceAll(/href="\//ig, `href="${domain}/`)
-				.replaceAll(/<img(.+?)src="\//ig, `<img$1src="${domain}/`)
-				.replaceAll(/<script(.+?)src="\//ig, `<script$1src="${domain}/`)
-				//.replaceAll(/content="\//ig, `href="${resourcesDomain}/`)
+				.replace(/href="\//ig, `href="${domain}/`)
+				.replace(/<img(.+?)src="\//ig, `<img$1src="${domain}/`)
+				.replace(/<script(.+?)src="\//ig, `<script$1src="${domain}/`)
+				//.replace(/content="\//ig, `href="${resourcesDomain}/`)
 				;
 
 			//console.log(html);
